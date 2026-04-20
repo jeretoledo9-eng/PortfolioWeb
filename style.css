@@ -535,6 +535,10 @@ textarea::placeholder {
     min-height: 0vh;
   }
 
+  .header-down {
+    display: none;
+  }
+
   .header-content {
     padding: 130px 30px 80px 30px;
     flex-direction: column;
