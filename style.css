@@ -483,3 +483,79 @@ textarea::placeholder {
 .footer-socials a:hover img {
   transform: scale(1.2);
 }
+
+/* Responsive */
+
+@media (max-width: 990px) {
+  .menu {
+    padding: 30px;
+  }
+
+  .menu label {
+    position: relative;
+    display: initial;
+    z-index: 10001;
+  }
+
+  .menu .navbar {
+    position: fixed;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex !important;
+    background: var(--bg-secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-100%);
+    transition: var(--transition);
+    z-index: 1000;
+  }
+
+  .menu .navbar ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+    padding: 0;
+  }
+
+  .menu .navbar ul li a {
+    font-size: 2rem;
+    color: var(--text-secondary);
+  }
+
+  #menu:checked ~ .navbar {
+    transform: translateY(0);
+  }
+
+  .header {
+    min-height: 0vh;
+  }
+
+  .header-content {
+    padding: 130px 30px 80px 30px;
+    flex-direction: column;
+  }
+
+  .header-txt {
+    width: 100%;
+    padding-right: 0;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .header-txt h1 {
+    font-size: 3.5rem;
+    line-height: 4rem;
+    letter-spacing: 2px;
+  }
+
+  .socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
