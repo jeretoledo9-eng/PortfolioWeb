@@ -21,7 +21,7 @@ form.addEventListener("submit", function (e) {
       message: document.getElementById("message").value,
     })
     .then(() => {
-      alert("Mensaje enviado correctamente 🚀");
+      alert("Mensaje enviado correctamente");
       form.reset();
     })
     .catch((error) => {
