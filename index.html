@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main id="main-content">
+      <header class="header" role="banner">
+        <div class="menu container">
+          <a href="#" aria-label="Inicio">
+            <img
+              class="logo-img"
+              src="img/logo-1.png"
+              alt="Logo de Jere Toledo"
+            />
+          </a>
+
+          <input type="checkbox" id="menu" aria-hidden="true" />
+          <label for="menu" aria-label="Abrir o cerrar menú">
+            <img
+              class="menu-icono"
+              src="img/menu.png"
+              alt=""
+              aria-hidden="true"
+            />
+          </label>
+
+          <div class="navbar" role="navigation" aria-label="Menú principal">
+            <ul>
+              <li><a href="#proyecto">Proyectos</a></li>
+              <li><a href="#about">Sobre mí</a></li>
+              <li><a href="#contacto">Contacto</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="header-content container">
+          <div class="header-txt">
+            <h1>Hola, soy <span>Jere Toledo</span></h1>
+            <p>
+              <strong>Diseñador gráfico y desarrollador frontend</strong> en
+              formación. Me especializo en crear
+              <strong>experiencias visuales atractivas y funcionales</strong>,
+              combinando creatividad con código para desarrollar
+              <strong>interfaces modernas y centradas en el usuario</strong>.
+            </p>
+
+            <div class="socials">
+              <a
+                class="btn-cv"
+                href="cv.pdf"
+                download
+                aria-label="Descargar CV en PDF"
+              >
+                Descargar CV
+              </a>
+
+              <a
+                class="instagram"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Abrir Instagram en nueva pestaña"
+              >
+                <img src="img/instagram.svg" alt="Instagram" />
+              </a>
+
+              <a
+                class="github"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Abrir GitHub en nueva pestaña"
+              >
+                <img src="img/github.svg" alt="GitHub" />
+              </a>
+            </div>
+          </div>
+
+          <div class="header-down">
+            <a href="#proyecto" aria-label="Ir a la sección proyectos">
+              <img src="img/abajo.svg" alt="" aria-hidden="true" />
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <section id="proyecto" class="projects" aria-labelledby="proyectos-title">
+        <div class="project-content container">
+          <h2 id="proyectos-title">Proyectos</h2>
+
+          <div class="project-card">
+            <div class="card">
+              <img src="img/chipa.webp" alt="Proyecto Chipa Mbareté" />
+              <h3>Chipa Mbareté</h3>
+              <p>
+                Desarrollo de identidad visual y presencia digital para una
+                marca gastronómica. Enfoque en diseño atractivo, contenido
+                visual y experiencia de usuario.
+              </p>
+              <a class="btn-2" href="#" aria-label="Ver más sobre Chipa Mbareté"
+                >Saber más</a
+              >
+            </div>
+
+            <div class="card">
+              <img src="img/pizza.webp" alt="Proyecto Rockísimo pizzería" />
+              <h3>Rockísimo</h3>
+              <p>
+                Sitio web para pizzería con estilo moderno y personalidad
+                fuerte. Diseño enfocado en destacar productos, mejorar la
+                navegación y captar clientes.
+              </p>
+              <a class="btn-2" href="#" aria-label="Ver más sobre Rockísimo"
+                >Saber más</a
+              >
+            </div>
+
+            <div class="card">
+              <img src="img/portfolio.webp" alt="Proyecto portfolio personal" />
+              <h3>Portfolio</h3>
+              <p>
+                Proyecto personal donde muestro mis trabajos, habilidades y
+                evolución como diseñador y desarrollador frontend.
+              </p>
+              <a class="btn-2" href="#" aria-label="Ver más sobre Portfolio"
+                >Saber más</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about" aria-labelledby="about-title">
+        <div class="about-content container">
+          <h2 id="about-title">Sobre mí</h2>
+          <div class="about-txt">
+            <p>
+              Soy <strong>Jere Toledo</strong>,
+              <strong>diseñador gráfico</strong> y
+              <strong>desarrollador frontend en formación</strong>. Me enfoco en
+              crear
+              <strong>interfaces modernas, funcionales y atractivas</strong>,
+              combinando <strong>diseño y código</strong> para lograr
+              <strong>experiencias digitales completas</strong>.
+            </p>
+
+            <p>
+              Tengo experiencia trabajando en
+              <strong>proyectos para marcas y negocios</strong>, desarrollando
+              desde la <strong>identidad visual</strong> hasta su
+              <strong>presencia web</strong>. Me gusta cuidar los
+              <strong>detalles</strong>, la <strong>estética</strong> y la
+              <strong>experiencia del usuario</strong>.
+            </p>
+
+            <p>
+              Actualmente estoy
+              <strong>perfeccionando mis habilidades</strong> en
+              <strong>desarrollo frontend</strong> y explorando
+              <strong>nuevas tecnologías</strong> para seguir
+              <strong>creciendo profesionalmente</strong>. Mi objetivo es
+              trabajar en <strong>proyectos desafiantes</strong> y construir
+              <strong>productos digitales de alto nivel</strong>.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacto" class="contact" aria-labelledby="contacto-title">
+        <div class="contact-content container">
+          <h2 id="contacto-title">Contáctame</h2>
+
+          <div class="contact-form">
+            <form action="" method="POST" autocomplete="on">
+              <div class="input-contact">
+                <label for="name">Nombre</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Tu nombre"
+                  required
+                  autocomplete="name"
+                />
+              </div>
+
+              <div class="input-contact">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="ejemplo@gmail.com"
+                  required
+                  autocomplete="email"
+                />
+              </div>
+
+              <div class="input-contact">
+                <label for="message">Mensaje</label>
+                <textarea
+                  rows="8"
+                  name="message"
+                  id="message"
+                  placeholder="Escribe tu mensaje"
+                  required
+                ></textarea>
+              </div>
+
+              <div class="input-contact">
+                <button
+                  class="btn-3"
+                  type="submit"
+                  aria-label="Enviar formulario"
+                >
+                  Enviar mensaje
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+      <div class="footer-content container">
+        <div class="footer-box">
+          <h3>Jere Toledo</h3>
+          <p>
+            Diseñador gráfico y desarrollador frontend enfocado en crear
+            experiencias modernas, funcionales y atractivas.
+          </p>
+        </div>
+        <div class="footer-box">
+          <h3>Redes</h3>
+          <div class="footer-socials">
+            <a
+              class="instagram"
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
+              <img src="img/instagram.svg" alt="Instagram" />
+            </a>
+
+            <a
+              class="github"
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+            >
+              <img src="img/github.svg" alt="GitHub" />
+            </a>
+
+            <a
+              class="email"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="#"
+              aria-label="Correo electrónico"
+            >
+              <img src="img/envelope.svg" alt="Email" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
