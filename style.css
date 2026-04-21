@@ -110,6 +110,7 @@ span {
   bottom: 0;
   right: 50%;
   transition: var(--transition);
+  animation: pulse 1.5s infinite;
 }
 
 .header-down:hover {
@@ -435,6 +436,13 @@ textarea::placeholder {
   transform: scale(1.03);
 }
 
+.btn-2:active,
+.btn-3:active {
+  transform: scale(0.96);
+  box-shadow: none;
+  opacity: 0.8;
+}
+
 /* FOOTER */
 
 .footer {
@@ -595,5 +603,39 @@ textarea::placeholder {
     align-items: center;
     text-align: center;
     gap: 30px;
+  }
+}
+
+/* LINEA DIVISORA */
+
+.linea-div {
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 70%;
+  height: 1px;
+
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(255, 255, 255, 0.09) 50%,
+    rgba(237, 221, 83, 0) 100%
+  );
+}
+
+@keyframes pulse {
+  0% {
+    transform: translateX(50%) scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: translateX(50%) scale(1.2);
+    opacity: 0.7;
+    filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.8));
+  }
+
+  100% {
+    transform: translateX(50%) scale(1);
+    opacity: 1;
   }
 }
