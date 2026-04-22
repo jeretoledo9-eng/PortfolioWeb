@@ -507,11 +507,15 @@ textarea::placeholder {
 
   .menu .navbar {
     position: fixed;
+    height: auto;
+    background: transparent;
+    backdrop-filter: none;
+    transform: none;
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
-    display: flex;
+    display: flex !important;
     justify-content: center;
     align-items: center;
     background: rgba(20, 20, 20, 0.4);
@@ -587,6 +591,7 @@ textarea::placeholder {
     width: 100%;
     text-align: center;
     border-left: none;
+    padding-left: 0;
   }
 
   .contact {
