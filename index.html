@@ -19,7 +19,7 @@
             />
           </a>
 
-          <input type="checkbox" id="menu" aria-hidden="true" />
+          <input type="checkbox" id="menu" />
           <label for="menu" aria-label="Abrir o cerrar menú">
             <img
               class="menu-icono"
@@ -55,9 +55,10 @@
                 href="cv.pdf"
                 download
                 aria-label="Descargar CV en PDF"
-                ><img src="img/file-earmark-arrow-down.svg" alt="" /><span
-                  >Descargar CV</span
-                >
+                ><img
+                  src="img/file-earmark-arrow-down.svg"
+                  alt="Descargar CV"
+                /><span>Descargar CV</span>
               </a>
 
               <a
@@ -94,7 +95,11 @@
 
       <div class="linea-div"></div>
 
-      <section id="proyecto" class="projects" aria-labelledby="proyectos-title">
+      <section
+        id="proyecto"
+        class="reveal projects"
+        aria-labelledby="proyectos-title"
+      >
         <div class="project-content container">
           <h2 id="proyectos-title">Proyectos</h2>
 
@@ -141,7 +146,7 @@
       </section>
       <div class="linea-div"></div>
 
-      <section id="about" class="about" aria-labelledby="about-title">
+      <section id="about" class="reveal about" aria-labelledby="about-title">
         <div class="about-content container">
           <h2 id="about-title">Sobre mí</h2>
           <div class="about-txt">
@@ -178,7 +183,11 @@
       </section>
       <div class="linea-div"></div>
 
-      <section id="contacto" class="contact" aria-labelledby="contacto-title">
+      <section
+        id="contacto"
+        class="reveal contact"
+        aria-labelledby="contacto-title"
+      >
         <div class="contact-content container">
           <h2 id="contacto-title">Contáctame</h2>
           <p>
@@ -282,6 +291,7 @@
         </div>
       </div>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="script.js" defer></script>
   </body>
