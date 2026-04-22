@@ -291,6 +291,46 @@ span {
   border-radius: 10px;
   box-shadow: var(--shadow);
   transition: var(--transition);
+  position: relative;
+}
+
+.tag {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+
+  background: rgba(255, 165, 0, 0.15);
+  color: #ffa500;
+  border: 1px solid rgba(255, 165, 0, 0.4);
+
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  border-radius: 20px;
+
+  backdrop-filter: blur(5px);
+  z-index: 1;
+}
+
+.card ul {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.card ul li {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  background-color: var(--border);
+  border-radius: 20px;
+  padding: 5px 10px;
+  border: 1px solid var(--bg-secondary);
+  transition: var(--transition);
+}
+
+.card ul li:hover {
+  background-color: var(--bg-card);
+  transition-duration: 500ms;
 }
 
 .card h3 {
@@ -722,8 +762,10 @@ textarea::placeholder {
 @keyframes reveal {
   from {
     opacity: 0;
+    scale: 97%;
   }
   to {
     opacity: 1;
+    scale: 100%;
   }
 }
