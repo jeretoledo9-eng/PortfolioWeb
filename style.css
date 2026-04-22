@@ -294,7 +294,7 @@ span {
   color: var(--text-secondary);
   display: inline-block;
   align-self: center;
-  background-color: var(--btn-bg);
+  background: linear-gradient(to right, #8a2be2, #6d1bb3);
   padding: 10px 20px;
   border-radius: 20px;
   margin-bottom: 15px;
@@ -421,7 +421,8 @@ textarea::placeholder {
   width: 50%;
   margin: 0 auto;
   border: none;
-  background: var(--btn-bg);
+  background: linear-gradient(to right, #8a2be2, #6d1bb3);
+
   color: var(--text-secondary);
   font-size: 0.9rem;
   border-radius: 20px;
@@ -643,5 +644,25 @@ textarea::placeholder {
   100% {
     transform: translateX(50%) scale(1);
     opacity: 1;
+  }
+}
+
+#progress {
+  position: fixed;
+  top: 0;
+  width: 0%;
+  height: 3px;
+  background: linear-gradient(to right, #8a2be2, #6d1bb3);
+  animation: progress-grow auto linear;
+  animation-timeline: scroll(root block);
+  z-index: 999999;
+}
+
+@keyframes progress-grow {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
   }
 }
