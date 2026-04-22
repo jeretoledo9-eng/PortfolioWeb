@@ -367,6 +367,15 @@ span {
   margin-bottom: 30px;
 }
 
+.contact-content p {
+  line-height: 1.6;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 25px;
+  font-weight: 200;
+  text-align: center;
+}
+
 .contact-form {
   display: flex;
   justify-content: center;
