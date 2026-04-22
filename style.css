@@ -655,7 +655,7 @@ textarea::placeholder {
   background: linear-gradient(to right, #8a2be2, #6d1bb3);
   animation: progress-grow auto linear;
   animation-timeline: scroll(root block);
-  z-index: 999999;
+  z-index: 999;
 }
 
 @keyframes progress-grow {
