@@ -191,7 +191,7 @@ span {
 
 .header-txt {
   width: 100%;
-  padding-right: 100px;
+  padding-right: 200px;
 }
 
 .header-txt h1 {
@@ -226,7 +226,8 @@ span {
   display: flex;
   align-items: center;
   padding: 10px 16px;
-  background: var(--primary-dark);
+  background: linear-gradient(to right, #8a2be2, #6d1bb3);
+
   border-radius: 20px;
   gap: 6px;
   min-width: 120px;
