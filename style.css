@@ -191,7 +191,8 @@ span {
 
 .header-txt {
   width: 100%;
-  padding-right: 210px;
+  left: 0;
+  padding-right: 150px;
 }
 
 .header-txt h1 {
@@ -362,11 +363,12 @@ span {
   display: inline-block;
   align-self: center;
   background: linear-gradient(to right, #8a2be2, #6d1bb3);
+  font-size: 0.9rem;
   padding: 10px 20px;
   border-radius: 20px;
   margin-bottom: 15px;
   transition: var(--transition);
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .card img {
