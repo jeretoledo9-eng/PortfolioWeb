@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -106,7 +108,11 @@
           <div class="project-card">
             <div class="card">
               <span class="tag">⚠️ En desarrollo</span>
-              <img src="img/chipa.webp" alt="Proyecto Chipa Mbareté" />
+              <img
+                src="img/chipa.webp"
+                loading="lazy"
+                alt="Proyecto Chipa Mbareté"
+              />
               <h3>Chipa Mbareté</h3>
               <p>
                 Desarrollo de identidad visual y presencia digital para una
@@ -118,14 +124,22 @@
                 <li>CSS</li>
                 <li>JavaScript</li>
               </ul>
-              <a class="btn-2" href="#" aria-label="Ver más sobre Chipa Mbareté"
-                >Saber más</a
+              <button
+                class="btn-2 btn-saber-mas"
+                data-modal="modal-chipa-mbareté"
+                data-desc="Desarrollo de identidad visual y presencia digital para marca gastronómica."
               >
+                Saber más
+              </button>
             </div>
 
             <div class="card">
               <span class="tag">⚠️ En desarrollo</span>
-              <img src="img/pizza.webp" alt="Proyecto Rockísimo pizzería" />
+              <img
+                src="img/pizza.webp"
+                loading="lazy"
+                alt="Proyecto Rockísimo pizzería"
+              />
               <h3>Rockísimo</h3>
               <p>
                 Sitio web para pizzería con estilo moderno y personalidad
@@ -137,14 +151,22 @@
                 <li>CSS</li>
                 <li>JavaScript</li>
               </ul>
-              <a class="btn-2" href="#" aria-label="Ver más sobre Rockísimo"
-                >Saber más</a
+              <button
+                class="btn-2 btn-saber-mas"
+                data-modal="modal-rockísimo"
+                data-desc="Sitio web moderno para pizzería, enfocado en productos y conversión."
               >
+                Saber más
+              </button>
             </div>
 
             <div class="card">
               <span class="tag">⚠️ En desarrollo</span>
-              <img src="img/portfolio.webp" alt="Proyecto portfolio personal" />
+              <img
+                src="img/portfolio.webp"
+                loading="lazy"
+                alt="Proyecto portfolio personal"
+              />
               <h3>Portfolio</h3>
               <p>
                 Proyecto personal donde muestro mis trabajos, habilidades y
@@ -155,9 +177,9 @@
                 <li>CSS</li>
                 <li>JavaScript</li>
               </ul>
-              <a class="btn-2" href="#" aria-label="Ver más sobre Portfolio"
-                >Saber más</a
-              >
+              <button class="btn-2 btn-saber-mas" data-modal="modal-portfolio">
+                Saber más
+              </button>
             </div>
           </div>
         </div>
@@ -309,6 +331,8 @@
         </div>
       </div>
     </footer>
+
+    <!-- MODAL -->
 
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="script.js" defer></script>

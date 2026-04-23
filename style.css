@@ -191,7 +191,7 @@ span {
 
 .header-txt {
   width: 100%;
-  padding-right: 200px;
+  padding-right: 210px;
 }
 
 .header-txt h1 {
@@ -295,6 +295,11 @@ span {
   position: relative;
 }
 
+.btn-saber-mas {
+  cursor: pointer;
+  border: none;
+}
+
 .tag {
   position: absolute;
   top: 15px;
@@ -331,6 +336,7 @@ span {
 
 .card ul li:hover {
   background-color: var(--bg-card);
+  border: 0.5px solid var(--btn-hover);
   transition-duration: 500ms;
 }
 
@@ -412,7 +418,7 @@ span {
 }
 
 .about-txt {
-  max-width: 700px;
+  max-width: 750px;
   padding-left: 20px;
   border-left: 2px solid var(--btn-bg);
 }
@@ -716,6 +722,8 @@ textarea::placeholder {
   }
 }
 
+/* ANIMACION DE HEADER/PROYECTO */
+
 @keyframes pulse {
   0% {
     transform: translateX(50%) scale(1);
@@ -733,6 +741,8 @@ textarea::placeholder {
     opacity: 1;
   }
 }
+
+/* BARRA DE CARGA CON SCROLL */
 
 #progress {
   position: fixed;
@@ -757,8 +767,10 @@ textarea::placeholder {
 .reveal {
   animation: reveal linear both;
   animation-timeline: view();
-  animation-range: entry 20% cover 40%;
+  animation-range: entry 10% cover 20%;
 }
+
+/* CARGA DE LA PAGINA SEGUN LO QUE SE VA MOSTRANDO */
 
 @keyframes reveal {
   from {
